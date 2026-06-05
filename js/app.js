@@ -53,7 +53,7 @@ toggleLink.addEventListener('click', (e) => {
   signupBtn.textContent = isSignupMode ? 'Sign In Instead' : 'Create Account';
   toggleText.innerHTML = isSignupMode
     ? 'Already have an account? <a href="#" id="toggle-auth">Sign in</a>'
-    : "Don't have an account? <a href="#" id="toggle-auth">Sign up</a>";
+    : 'Don\'t have an account? <a href="#" id="toggle-auth">Sign up</a>';
   document.querySelectorAll('#toggle-auth').forEach(el => {
     el.addEventListener('click', (e) => {
       e.preventDefault();
